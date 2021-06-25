@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Son topish o'yini</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+        
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class=" 
+        container
+        py-5
+        text-center
+        d-flex
+        flex-column
+        justify-content-center
+      ">
+        <h1 class="text-white display-3 fw-bold title">
+            <span id="count">10</span> ta imkoniyatingiz bor
+        </h1>
+        <p class="mt-5 text-primary fs-3 invisible" id="statusp">
+            Siz kiritgan son <span id="status">kichik</span>
+        </p>
+        <form id="form" class="mt-5">
+            <input type="number" id="number" placeholder="Kompyuter o'ylagan sonni toping..." />
+            <br />
+            <button class="mt-5 btn-blue">Topdim</button>
+        </form>
+    </div>
+
+    <div id="modal" class="d-none">
+
+        <div id="success" class="p-4 modal-panel d-none">
+            <img src="./img/happy.png" class="icon" alt="" />
+            <p class="fw-bold text-white fs-3">
+                Tabriklaymiz. O’yin g’olibi bo’ldingiz!
+                <button class="btn text-white fs-2" onclick="reLoad()">
+                    <i class="fas fa-redo-alt"></i>
+                </button>
+            </p>
+        </div>
+
+        <div id="error" class="p-4 modal-panel d-none">
+            <img src="./img/sad.png" class="icon" alt="" />
+            <p class="fw-bold text-white fs-3">
+                Biz sizni g’olib bo’lishingizni xohlagandik. Lekin yutqazdingiz!
+                <button class="btn text-white fs-2" onclick="reLoad()">
+                    <i class="fas fa-redo-alt"></i>
+                </button>
+            </p>
+        </div>
+    </div>
+
+    <audio src="" id="player"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
