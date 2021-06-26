@@ -46,6 +46,11 @@ input {
   border: none;
   box-shadow: 0 10px 40px 0 rgba($color: #053968, $alpha: 0.4);
   outline: none;
+
+  &:active{
+    transform: scale(0.99);
+
+  }
 }
 
 .btn-blue {
@@ -58,10 +63,13 @@ input {
   box-shadow: 0 10px 40px 0 rgba($color: #053968, $alpha: 0.7);
   outline: none !important;
   border: none !important;
-  transition: 0.3s;
+  transition: 0.2s;
 
   &:hover {
     box-shadow: 0 10px 30px 0 rgba($color: #053968, $alpha: 0.8);
+  }
+  &:active{
+    transform: scale(0.9);
   }
 }
 

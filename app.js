@@ -46,6 +46,7 @@ form.addEventListener('submit', (e) => {
         player.play()
         modal.classList.remove('d-none')
         error.classList.remove('d-none')
+        counts = 10
         return
     }
 });
